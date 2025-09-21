@@ -1,6 +1,6 @@
 ﻿namespace Assignment
 {
-    internal class LockedDoor : IOpenableDoor, ILockedDoor, IDoor
+    internal class LockedDoor : IOpenableDoor, ILockedDoor//, IDoor
     {
         public bool IsOpen { get; set; }
 
