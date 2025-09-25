@@ -1,7 +1,9 @@
 ﻿namespace Assignment
 {
-    internal interface IPaidDoor
+    public interface IPaidDoor : IOpenableDoor
     {
-        public bool EnterPayment(string name, int gold);
+        public bool IsOpen { get; set; }
+        public int goldPayRemain { get; set; }
+        public bool pay(string name, int gold);
     }
 }

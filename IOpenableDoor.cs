@@ -1,6 +1,6 @@
 ﻿namespace Assignment
 {
-    internal interface IOpenableDoor
+    public interface IOpenableDoor
     {
         public bool IsOpen { get; set; }
         public bool Open();

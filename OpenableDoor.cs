@@ -1,19 +1,19 @@
 ﻿namespace Assignment
 {
-    internal class OpenableDoor : IOpenableDoor//, IDoor
+    public class OpenableDoor : IOpenableDoor
     {
         public bool IsOpen { get; set; }
         public bool Open()
         {
             if (IsOpen)
             {
-                Console.WriteLine("\nThe door is already open");
+                Console.WriteLine("\nThe door is already open.");
                 return true;
             }
             else
             {
                 IsOpen = true;
-                Console.WriteLine("\nThe door is now open");
+                Console.WriteLine("\nThe door is now open.");
                 return true;
             }
         }
@@ -22,12 +22,12 @@
             if (IsOpen)
             {
                 IsOpen = false;
-                Console.WriteLine("\nThe door is now closed");
+                Console.WriteLine("\nThe door is now closed.");
                 return false;
             }
             else
             {
-                Console.WriteLine("\nThe door is already closed");
+                Console.WriteLine("\nThe door is already closed.");
                 return false;
             }
         }
